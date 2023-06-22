@@ -1,0 +1,22 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "description": "My first npm package",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BlackZu01/NodeJS.git"
+  },
+  "author": "BlackZu01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BlackZu01/NodeJS/issues"
+  },
+  "homepage": "https://github.com/BlackZu01/NodeJS#readme",
+  "devDependencies": {
+    "express": "^4.18.2"
+  }
+}

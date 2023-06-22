@@ -1,0 +1,13 @@
+{
+    "title": "Aprendiendo Node con FreeCodeCamp",
+    "couple": "María Solá",
+    "career": "Matemáticas",
+    "programming languages": [
+        "Python",
+        "Golang",
+        "Ruby",
+        "Java",
+        "Javascript"
+    ],
+    "public-rep": true
+}

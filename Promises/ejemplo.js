@@ -28,13 +28,16 @@ const transactionPayment = new Promise((resolve, reject) => {
     }, 100);
 });
 
-const transactionCompleted = (value) => {
+// const transactionCompleted = (value) => {
+//     value;
+// };
+
+// const transactionDenied = (reasonReject) => {
+//     reasonReject;
+// };
+
+transactionPayment.then((value) => {
     value;
-};
-
-const transactionDenied = (reasonReject) => {
-    reasonReject;
-};
-
-transactionPayment.then(transactionCompleted, transactionDenied);
-
+}).catch((reasonError)=> {
+    reasonError;
+})

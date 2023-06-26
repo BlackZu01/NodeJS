@@ -39,14 +39,24 @@ const endingTxn = () => {
     });
 }
 
-initTxn('debit', 773)
-    .then((response) => {
-        response;
-        return endingTxn();
-    })
-    .then((responseProcess)=> {
-        console.log(responseProcess);
-    })
-    .catch(error => {
-        console.log(error);
-    })
+// initTxn('jeje', 773)
+//     .then((response) => {
+//         response;
+//         return endingTxn();
+//     })
+//     .then((responseProcess)=> {
+//         console.log(responseProcess);
+//     })
+//     .catch(error => {
+//         console.log(error);
+//     })
+
+// Codigo equivalente a lo de arriba
+
+const makeTxn = async (type, amount) => {
+    const initializeTxn = await initTxn(type, amount); // No le hago console porque el resolve lo que esta emitiendo es un booleano por la libreria events
+    const endTxn = await endingTxn();
+    console.log(endTxn);
+}
+
+makeTxn('debit', 773);

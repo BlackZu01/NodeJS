@@ -1,0 +1,17 @@
+POST http://localhost:3000/cursos/programacion
+Content-Type: application/json
+
+{
+    "id": 4,
+    "titulo": "Learn Node",
+    "lenguaje": "node",
+    "vistas": 17773,
+    "nivel" : "intermediate"
+}
+###
+
+DELETE http://localhost:3000/cursos/matematicas/algebra
+
+###
+
+PUT http://localhost:3000/cursos/matematicas
